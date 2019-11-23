@@ -6,7 +6,7 @@ const rootDir = require('../utilities/path')
 
 
 router.use((req, res, next) => {
-    res.status(404).sendFile(path.join(rootDir, 'views', 'error-page.html'))
+    res.render('error-page')
 })
 
 module.exports = router
