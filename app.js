@@ -1,8 +1,10 @@
 const express = require('express')
 const path = require('path')
 const app = express()
+const expressHbs = require('express-handlebars')
 
-app.set('view engine', 'pug')
+app.engine('hbs', expressHbs())
+app.set('view engine', 'hbs')
 app.set('views', 'views')
 
 const bodyParser = require('body-parser')
