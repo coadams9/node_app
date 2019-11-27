@@ -6,7 +6,7 @@ const rootDir = require('../utilities/path')
 
 
 router.use((req, res, next) => {
-    res.render('error-page', { pageTitle: 'Page Not Found' })
+    res.render('error-page', { pageTitle: 'Page Not Found', path: '' })
 })
 
 module.exports = router
